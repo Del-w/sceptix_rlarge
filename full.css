@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+section{
+    width:100%;
+    overflow: hidden;
+}
+#box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#section1{
+    background-image: url("lost.jpg");
+    height : 100vh;
+    background-attachment: fixed;
+    color:white;
+    font-family: 'Bastro';
+    font-size: 7vw;
+}
