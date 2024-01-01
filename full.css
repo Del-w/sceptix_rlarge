@@ -54,7 +54,6 @@ pre{
     position: relative;
     margin:0 auto;
     height:100vh;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
@@ -83,7 +82,7 @@ a {
     height:100vh;
     overflow: hidden;
     justify-content: center;
-    align-items: center;
+    
 }
 
 #video{
