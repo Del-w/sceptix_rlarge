@@ -95,9 +95,95 @@ transcend the boundaries of the everyday."
         </section>
 
         <section id="section5">
-            <h4></h4>
+            
+            <div class="textsec3">
+            <h4 id="h5">Discover the Unique Features of Fabula : </h4>
+            <pre id="p5">
+
+1. Innovative Architectural Marvels:
+Fabula boasts a skyline that transcends 
+conventional boundaries, featuring 
+architectural marvels that redefine the 
+very essence of design. From 
+gravity-defying structures to buildings 
+inspired by dreams, each edifice in 
+Fabula tells a story of creativity and 
+imagination.
+            </pre>
+        </div>
+        <div class="imgsec3"></div>
         </section>
-<!--more sections to add-->
+
+        <section id="section6">
+            <div class="imgsec4"></div>
+            <div class="textsec4">
+                <pre id="p6">
+    
+2. Green Spaces:
+Nestled within the heart of Fabula 
+are lush parks, serene gardens, 
+and vibrant green spaces that serve 
+as sanctuaries for residents. 
+Immerse yourself in the tranquility 
+of nature, where every corner is a 
+living canvas, blending the artificial 
+and the organic in perfect harmony.
+                </pre>
+            </div>
+           </section>
+           
+        <section id="section7">
+            <div class="textsec7">
+                <pre id="p5">
+
+3. Community Nexus:
+Fabula isn't just a place to live; it's a 
+holistic community that caters to every aspect 
+of life. Indulge in world-class amenities, 
+from state-of-the-art schools that nurture 
+young minds to community centers that foster 
+connections. Unwind in gyms equipped with 
+cutting-edge technology, take a dip in 
+crystalline swimming pools, and experience a 
+lifestyle beyond compare.    
+    </pre>
+            </div>
+            <div class="imgsec7">
+                <img class = "image image1" src="school.jpg" onclick="bringToFront(this)">
+                <img class = "image image2" src="gym.jpg" onclick="bringToFront(this)">
+                <img class = "image image3" src="swim.jpg" onclick="bringToFront(this)">
+            </div>
+            </section>
+    <script>
+        function bringToFront(clickedImage){
+            var images = document.querySelectorAll('.image');
+            clickedImage.style.zIndex = images.length;
+            images.forEach(function(image){
+                if(image !== clickedImage){
+                    image.style.zIndex = parseInt(image.style.zIndex)-1;
+                }
+            });
+        }
+    </script>
+        
+            <section id="section6">
+                <div class="imgsec6"></div>
+                <div class="textsec4">
+                    <pre id="p6">
+        
+4. Ingenious Smart City Infrastructure:
+Fabula stands at the forefront of technological 
+innovation with its smart city infrastructure. 
+Experience the seamless integration of 
+advanced technologies that enhance convenience 
+and efficiency. From smart transportation systems 
+to automated security measures, Fabula redefines 
+urban living through the thoughtful integration 
+of technology into the very fabric of the city.
+                    </pre>
+                </div>
+               </section>
+
     
     <!--audio element-->
     <audio id="audio" autoplay loop>
