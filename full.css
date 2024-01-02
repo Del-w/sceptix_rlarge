@@ -53,7 +53,7 @@ pre{
     flex-direction: column;
     position: relative;
     margin:0 auto;
-    height:100vh;
+    height:90vh;
     justify-content: center;
     align-items: center;
 }
@@ -66,20 +66,22 @@ a {
     margin-top: 1vh;
     color: rgb(201, 211, 212);
     text-align: left;
+    margin-top: 4vh;
+    font-family: 'Whisper';
 }
 
 #p212{
     color: rgb(201, 211, 212);
     text-align: left;
-    font-family: 'Barlow', sans-serif;
-    margin-top: 5vh;
+    font-family: 'Whisper', sans-serif;
+    margin-top: 4vh;
 }
 
 #section3{
     display: flex;
     position: relative;
     margin:0 auto;
-    height:100vh;
+    height:70vh;
     overflow: hidden;
     justify-content: center;
     
@@ -100,62 +102,26 @@ h3{
     text-align: center;
     color: rgb(201, 211, 212);
     font-family: "Kolyada-UltraLightItalic";
-    font-size: 7vw;
+    font-size: 8vw;
     margin-top: 30vh;
-}
-
-#section4{
-    display:flex;
-    height : 100vh;
-    background-color: rgb(0, 0, 0);
-    color:rgb(255, 255, 255);
-    font-size: 7vw;
-}
-
-#p2{
-    padding:0;
-    margin-top: 5vh;
-    margin-left:6vw;
-    font-size: 3vw;
-    font-family: "Whisper";
-}
-
-.imagesec2{
-    flex:1.5;
-    background: url('fredric.jpeg') center/cover no-repeat;
-}
-
-.textsec2{
-    flex: 2.25;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.textsec2::-webkit-scrollbar {
-    width: 0; 
 }
 
 #section5{
     display: flex;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     height : 100vh;
-    color:rgb(32, 21, 87);
+    color:rgb(255, 255, 255);
     font-family: 'Barlow', sans-serif;
     font-size: 2vw;
 }
 
 #h5{
-    color: rgb(26, 26, 26);
     text-align: center;
     font-size: 2.75vw;
 }
 
 #p5{
+    font-size: 2vw;
     margin-left: 5vw;
     margin-top: 1vh;
     text-align: left;
@@ -181,14 +147,15 @@ h3{
 
 #section6{
     display: flex;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     height : 100vh;
-    color:rgb(32, 21, 87);
+    color:rgb(255, 255, 255);
     font-family: 'Barlow', sans-serif;
     font-size: 2vw;
 }
 
 #p6{
+    font-size: 2vw;
     margin-left: 1vw;
     margin-top: 1vh;
     text-align: left;
@@ -223,9 +190,9 @@ h3{
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #000000;
     font-family: 'Roboto', sans-serif;
-    color: rgb(32, 21, 87);
+    color: rgb(255, 255, 255);
     overflow: hidden;
 }
 
@@ -262,7 +229,7 @@ h3{
 .image1{
     top:20vh;
     left:5vw;
-    z-index:1;
+    z-index:3;
 }
 
 .image2{
@@ -274,5 +241,228 @@ h3{
 .image3{
     top:38vh;
     left:12vw;
-    z-index:3;
+    z-index:1;
+}
+
+#section8{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    height : 100vh;
+    color:rgb(255, 255, 255);
+    font-family: 'Barlow', sans-serif;
+    font-size: 2vw;
+}
+
+#h8{
+    font-size: 2.5vw;
+    margin-left:9.89vw;
+}
+
+#p8{
+    font-size: 2vw;
+    margin-top: 3vh;
+}
+
+.card-container{
+    display:flex;
+    justify-content: center;
+    gap:8vw;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(45% -10px);
+    max-width: 35vw;
+    overflow:visible;
+    margin: 10px;
+    text-align: left;
+}
+
+.card img{
+    width: 100%;
+    height: 40vh;
+}
+
+.card-text{
+    padding:10px;
+}
+
+#section8{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    height : 100vh;
+    color:rgb(255, 255, 255);
+    font-family: 'Barlow', sans-serif;
+    font-size: 2vw;
+}
+
+#p8{
+    font-size: 2vw;
+}
+
+#section9{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    background-attachment: fixed;
+    height : 120vh;
+    color:rgb(255, 255, 255);
+    font-family: 'Barlow', sans-serif;  
+}
+
+#h9{
+    font-size: 3vw;
+    text-align: center;
+    margin:10px;
+    padding: 0;
+    
+}
+
+#p9{
+    text-align: center;
+    font-size: 1.25vw;
+    margin-top: 7vh;
+}
+
+#section10{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Barlow', sans-serif;
+}
+
+#h10{
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    margin:40px;
+    padding:0;
+}
+
+.faq-container {
+    max-width: 60vw;
+    margin: 20px auto;
+}
+
+.question {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    margin-bottom:10px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#finalsection{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Barlow', sans-serif;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    overflow:hidden;
+}
+
+
+.company-details {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.contact-form {
+    width: 40%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 25px;
+    width: 100%;
+    bottom: 0;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+#pf{
+    font-size: 1.25vw;
 }
