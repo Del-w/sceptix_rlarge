@@ -31,6 +31,7 @@ h1{
    margin:0;
    padding:0;
    text-align: center;
+   color:rgb(205, 184, 184);
 }
 
 #section2{
@@ -323,10 +324,19 @@ h3{
     
 }
 
+#section9 pre{
+    color:rgb(255, 255, 255);
+}
+
+#section9 a {
+    color: inherit;
+}
+
 #p9{
     text-align: center;
     font-size: 1.25vw;
     margin-top: 7vh;
+    color:rgb(255, 255, 255);
 }
 
 #section10{
