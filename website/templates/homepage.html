@@ -4,7 +4,7 @@
     <title>g00dby3.exe</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="full.css">
+    <link rel="stylesheet" href="{{url_for ('static',filename='full.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
@@ -17,6 +17,25 @@
 
 </head>
 <body>
+    <nav class="'navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" date-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" id="login" href="/login">Login</a>
+                <a class="nav-item nav-link" id="signup" href="/sign-up">Sign Up</a>
+                <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+                <a class="nav-item nav-link" id="home" href="/">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
     <!--starting section-->
     <section id="section1">
         <div id="box">
@@ -55,7 +74,7 @@ creativity and the boundless stories that can be woven in the tapestry of existe
     <!--video-->
     <section id="section3">
              <video id="video" autoplay muted loop>
-                <source src="video1.mp4" type="video/mp4">
+                <source src="{{url_for ('static',filename='video1.mp4')}}" type="video/mp4">
             </video>
             <pre id="p212">
 Our Mission:
@@ -69,30 +88,6 @@ their unique narratives.
             </pre>
     </section>
     
-    <!--quotes-->
-    <section id="section4">
-        <div class="imagesec2"></div>
-        <div class="textsec2">        
-            
-            <pre id="p2">
-"Fabula invites you to step beyond the veil of reality, 
-where the ordinary transforms into the extraordinary. 
-As the owner of this ethereal sanctuary, I am honored 
-to guide you through a journey of discovery and 
-transformation. Uncover the secrets, create your own 
-legend, and become an integral part of the ever-evolving 
-tapestry that is Fabula. 
-Step into the unknown, where the line between reality and 
-illusion blurs. 
-'Fabula' is not just an experience; it's an invitation to 
-transcend the boundaries of the everyday."
-
-                               
-
-                                                           - FredricJordan
-                </pre>
-        </div>
-        </section>
 
         <section id="section5">
             
@@ -161,9 +156,9 @@ lifestyle beyond compare.
     </pre>
             </div>
             <div class="imgsec7">
-                <img class = "image image1" src="school.jpg" onclick="bringToFront(this)">
-                <img class = "image image2" src="gym.jpg" onclick="bringToFront(this)">
-                <img class = "image image3" src="swim.jpg" onclick="bringToFront(this)">
+                <img class = "image image1" src="{{url_for ('static',filename='school.jpg')}}" onclick="bringToFront(this)">
+                <img class = "image image2" src="{{url_for ('static',filename='gym.jpg')}}" onclick="bringToFront(this)">
+                <img class = "image image3" src="{{url_for ('static',filename='swim.jpg')}}" onclick="bringToFront(this)">
             </div>
             </section>
     <script>
@@ -199,12 +194,37 @@ of technology into the very fabric of the city.
                     </pre>
                 </div>
                </section>
+               
+                  <!--quotes-->
+    <section id="section4">
+        <div class="imagesec2"></div>
+        <div class="textsec2">        
+            
+            <pre id="p2">
+"Fabula invites you to step beyond the veil of reality, 
+where the ordinary transforms into the extraordinary. 
+As the owner of this ethereal sanctuary, I am honored 
+to guide you through a journey of discovery and 
+transformation. Uncover the secrets, create your own 
+legend, and become an integral part of the ever-evolving 
+tapestry that is Fabula. 
+Step into the unknown, where the line between reality and 
+illusion blurs. 
+'Fabula' is not just an experience; it's an invitation to 
+transcend the boundaries of the everyday."
+
+                               
+
+                                                           - FredricJordan
+                </pre>
+        </div>
+        </section>
 
     
     <!--audio element-->
     <audio id="audio" autoplay loop>
         <source src="goodbye.mp3" type="audio/mpeg">
-        <source src="goodbye.mp3" type="audio/ogg">
+        <source src="{{url_for ('static',filename='goodbye.mp3')}}" type="audio/ogg">
     </audio>
     
 </body>
