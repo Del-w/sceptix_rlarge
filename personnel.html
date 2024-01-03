@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>l0g1n.exe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="person.css">
+</head>
+<body>
+    <h1>FOR AUTHORISED PERSONNEL ONLY : </h1>
+    <p>
+        This exclusive sector within Fabula is designated solely for our authorized personnel. 
+        While we appreciate your interest, it is important to recognize that this section is tailored for those entrusted. 
+        If you find yourself outside the circle of authorized individuals, we kindly urge you to refrain from exploring this section. 
+        Your understanding and cooperation significantly contribute to the sustained success and positive ambiance of Fabula. 
+    </p>
+    <form onsubmit="
+    return false;">
+        <input type="Password" id="password" placeholder="Password" required onkeydown="if(event.keyCode==13) checkPassword()">
+        <button type="button" onclick="checkPassword()">Submit</button>
+    </form>
+
+    <div id="test"></div>
+
+    <p>
+        We are committed to cultivating an environment of mutual respect and trust among our esteemed community members. 
+        We extend our gratitude for your cooperation, anticipating a continued provision of a seamless and enriching 
+        experience for our authorized users.
+    </p>
+
+    <script>
+        function checkPassword() {
+            var enteredPassword = document.getElementById('password').value;
+            var pass1 = '01001010 00101101 01010010 01000100 00101101 01001110 01001111';
+            var pass2 = '01010000 01010011 01010110 00101101 01010010 01000110 01000010';
+            var errorText = 'Incorrect Password';
+            if(enteredPassword === pass1) {
+                window.location.href='auth.html';
+            }
+            else if(enteredPassword === pass2) {
+                window.location.href = 'unauth.html';
+            }
+            else{
+                document.getElementById('test').innerHTML = errorText;
+            }
+        }
+    </script>
+
+</body>
+</html>

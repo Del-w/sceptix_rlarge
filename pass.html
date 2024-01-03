@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>pa55k3y5.exe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="pass.css">
+    </head>
+    
+    <body>
+    <section>
+        <h1 id="changingHeading">and deliver us from all evil..</h1>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var changingHeading = document.getElementById('changingHeading');
+            var headings = ['PSV-RFB','IUY-HJL','J-UT-ER','J-RD-NO'];
+            var fontSizes = ['10vw','10vw','10vw','10vw'];
+            var currentIndex=0;
+
+            function changeHeading() {
+                changingHeading.style.fontSize = fontSizes[currentIndex];
+                changingHeading.textContent = headings[currentIndex];
+                currentIndex = (currentIndex + 1) % headings.length;
+            }
+        var intervalId = setInterval(changeHeading,4500);
+        });
+
+    </script>
+</body>
+</html>
