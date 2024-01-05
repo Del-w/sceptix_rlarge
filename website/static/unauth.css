@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: "Broken Soul";
+    color: rgb(173, 13, 13);
+}
+
+#section1 {
+    background-image: url('auth.jpg');
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+p{
+    margin:0;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}

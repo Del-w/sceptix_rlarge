@@ -5,16 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{url_for ('static',filename='full.css')}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/b31f0099c2a4a2aa08671b5fa909ffc7?family=X+Typewriter" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/b0fa0ee4a272f31f44f1e1b876cad6c3?family=Bastro" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/f4b38b0a6dbbf0bcf39c3f934d02a29a?family=Susie%27s+Hand" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/d4b829bf745605041048c75572af9a30?family=Vectis+Miniscule+W01+Regular" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/583c623f81af2a70dd720b4126b78ba7?family=Kolyada-UltraLightItalic" rel="stylesheet">
-
+    <link href="https://db.onlinewebfonts.com/c/b0fa0ee4a272f31f44f1e1b876cad6c3?family=Bastro" rel="stylesheet">  
+    <link href="https://db.onlinewebfonts.com/c/bc229d0cbaf57b9531e961c076963c0a?family=a3+Italic" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/f91a412001b172191b72f9c3aa8a4dd5?family=GT+Alpina+Fine+Regular" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/61ccd65742ec5c151136c77f6ef097c4?family=HelveticaNeueLTPro-Ex" rel="stylesheet">
 </head>
 <body>
 
@@ -29,7 +23,8 @@
     
     <!--content-->
     <section id="section2">
-                <pre>
+        <div class="container1">
+                <pre id="p1">
 Tired of the familiar? 
 Seeking an escape from the ordinary? 
 
@@ -40,253 +35,109 @@ ordinary.
 
 Welcome to Fabula
 </pre>
+</div>
+    </section>
 
-    </section>
-    <section id="section212">
-        <a href="Goodbye.html">
-        <h3>SAY HELLO TO 'FABULA'</h3>
-        </a>
-        <pre id="p211">
-In the ancient language of forgotten realms, "Fabula" translates to a fabled tale, 
-a narrative spun from the threads of imagination. The name echoes the enchanting 
-allure of a place where reality and fantasy dance together in a symphony of endless 
-possibilities.Fabula emerged as a testament to the limitless potential of human 
-creativity and the boundless stories that can be woven in the tapestry of existence.
-        </pre>
-    </section>
-    
-    <!--video-->
     <section id="section3">
-             <video id="video" autoplay muted loop>
-                <source src="{{url_for ('static',filename='video1.mp4')}}" type="video/mp4">
-            </video>
-            <pre id="p212">
+        <h3 id="h0">SAY HELLO</h3>
+        <h4 id="h001">TO 'FABULA'</h4>
+        <video id="video" autoplay muted loop>
+            <source src="{{url_for ('static',filename='video1.mp4')}}" type="video/mp4">
+        </video>
+        <pre id="p2">
 Our Mission:
 
-At Fabula, our mission is to craft an extraordinary living experience, where the 
-mundane borders of reality blur into the fantastical. We strive to create a haven 
-that transcends the ordinary, offering a sanctuary where residents can explore the 
-realms of their wildest dreams. Fabula stands as a testament to the power of 
-imagination, a canvas upon which the inhabitants can paint the vibrant strokes of 
-their unique narratives.
-            </pre>
+At Fabula, our mission is to craft an extraordinary 
+living experience, where the mundane borders of 
+reality blur into the fantastical. We strive to 
+create a haven that transcends the ordinary, 
+offering a sanctuary where residents can explore the 
+realms of their wildest dreams. Fabula stands as a 
+testament to the power of imagination, a canvas upon 
+which the inhabitants can paint the vibrant strokes 
+of their unique narratives.
+        </pre>
     </section>
     
-
-        <section id="section5">
-            
-            <div class="textsec3">
-            <h4 id="h5">Discover the Unique Features of Fabula : </h4>
-            <pre id="p5">
-
-1. Innovative Architectural Marvels:
-
-
-Fabula boasts a skyline that transcends 
-conventional boundaries, featuring 
-architectural marvels that redefine the 
-very essence of design. 
-
-From gravity-defying structures to buildings 
-inspired by dreams, each edifice in 
-Fabula tells a story of creativity and 
-imagination.
-            </pre>
+    <section id="section4">
+        <div id="scrollx" class="scrollx">
+            <button id="arrow-left" onclick="scrollCards('left')">❮</button>
+            <div class="cardx">
+                <img src="{{url_for ('static',filename='future.jpg')}}" alt="Image 1">
+                <div class="card-text">
+                    <p id="p3">1. Architectural Marvels:
+                        Fabula's skyline redefines design essence with gravity-defying 
+                        structures and dream-inspired buildings, narrating tales of 
+                        creativity.</p>
+                </div>
+            </div>
+            <div class="cardx">
+                <img src="{{url_for ('static',filename='city.jpg')}}" alt="Image 2">
+                <div class="card-text">
+                    <p id="p3">2. Green Oasis:
+                        Nestled in Fabula's heart, lush parks and serene gardens offer 
+                        sanctuaries, blending artificial and organic elements in perfect 
+                        harmony.</p>
+                </div>
+            </div>
+            <div class="cardx">
+                <img src="{{url_for ('static',filename='school.jpg')}}" alt="Image 3">
+                <div class="card-text">
+                    <p id="p3">3. Holistic Community:
+                        Fabula transcends as a holistic community with world-class amenities, 
+                        from nurturing schools to cutting-edge gyms, fostering connections and 
+                        offering a lifestyle beyond compare.</p>
+                </div>
+            </div>
+            <div class="cardx">
+                <img src="{{url_for ('static',filename='feature.jpg')}}" alt="Image 4">
+                <div class="card-text">
+                    <p id="p3">4. Smart City Living:
+                        Fabula leads in technological innovation with smart city infrastructure, 
+                        seamlessly integrating advanced tech for convenience and efficiency, 
+                        revolutionizing urban living.</p>
+                </div>
+            </div>
+            <button id="arrow-right" onclick="scrollCards('right')">❯</button>
         </div>
-        <div class="imgsec3"></div>
-        </section>
-
-        <section id="section6">
-            <div class="imgsec4"></div>
-            <div class="textsec4">
-                <pre id="p6">
     
-2. Green Spaces:
+    </section>
 
-
-Nestled within the heart of Fabula 
-are lush parks, serene gardens, 
-and vibrant green spaces that serve 
-as sanctuaries for residents.
-
-Immerse yourself in the tranquility 
-of nature, where every corner is a 
-living canvas, blending the artificial 
-and the organic in perfect harmony.
-                </pre>
-            </div>
-           </section>
-           
-        <section id="section7">
-            <div class="textsec7">
-                <pre id="p5">
-
-3. Community Nexus:
-
-
-Fabula isn't just a place to live; it's a 
-holistic community that caters to every aspect 
-of life. 
-
-Indulge in world-class amenities, 
-from state-of-the-art schools that nurture 
-young minds to community centers that foster 
-connections. 
-
-Unwind in gyms equipped with 
-cutting-edge technology, take a dip in 
-crystalline swimming pools, and experience a 
-lifestyle beyond compare.    
-    </pre>
-            </div>
-            <div class="imgsec7">
-                <img class = "image image1" src="{{url_for ('static',filename='school.jpg')}}" onclick="bringToFront(this)">
-                <img class = "image image2" src="{{url_for ('static',filename='gym.jpg')}}" onclick="bringToFront(this)">
-                <img class = "image image3" src="{{url_for ('static',filename='swim.jpg')}}" onclick="bringToFront(this)">
-            </div>
-            </section>
     <script>
-        function bringToFront(clickedImage){
-            var images = document.querySelectorAll('.image');
-            clickedImage.style.zIndex = images.length;
-            images.forEach(function(image){
-                if(image !== clickedImage){
-                    image.style.zIndex = parseInt(image.style.zIndex)-1;
+        var scrollingContainer = document.getElementById("scrollx");
+        function scrollCards(direction) {
+            var scrollAmount = 500;
+    
+            var isInFourthSection = document.getElementById("section4").contains(scrollingContainer);
+    
+            if (isInFourthSection) {
+                if (direction === 'left') {
+                    scrollingContainer.scrollLeft -= scrollAmount;
+                } else if (direction === 'right') {
+                    scrollingContainer.scrollLeft += scrollAmount;
                 }
-            });
+            }
         }
     </script>
-        
-            <section id="section6">
-                <div class="imgsec6"></div>
-                <div class="textsec4">
-                    <pre id="p6">
-        
-4. Ingenious Smart City Infrastructure:
 
-Fabula stands at the forefront of technological 
-innovation with its smart city infrastructure. 
-
-Experience the seamless integration of 
-advanced technologies that enhance convenience 
-and efficiency. 
-
-From smart transportation systems 
-to automated security measures, Fabula redefines 
-urban living through the thoughtful integration 
-of technology into the very fabric of the city.
-                    </pre>
-                </div>
-               </section>
-               
-                  <!--quotes-->
-    <section id="section4">
-        <div class="imagesec2"></div>
-        <div class="textsec2">        
-            
-            <pre id="p2">
-"Fabula invites you to step beyond the veil of reality, 
-where the ordinary transforms into the extraordinary. 
-As the owner of this ethereal sanctuary, I am honored 
-to guide you through a journey of discovery and 
-transformation. Uncover the secrets, create your own 
-legend, and become an integral part of the ever-evolving 
-tapestry that is Fabula. 
-Step into the unknown, where the line between reality and 
-illusion blurs. 
-'Fabula' is not just an experience; it's an invitation to 
-transcend the boundaries of the everyday."
-
-                               
-
-                                                           - FredricJordan
-                </pre>
-        </div>
-        </section>
-
-<section id="section8">
-    <h6 id="h8">Residential Options in Fabula : </h6>
-    <div class="card-container">
-    <div class="card">
-        <img src="{{url_for ('static',filename='house.jpg')}}">
-    <div class="card-text">
-    <pre id="p8">
-Diverse Housing:
-
-Fabula offers sleek apartments and 
-standalone houses, showcasing 
-architectural innovation for varied 
-preferences.
-    </pre>
-    </div>
-    </div>
-    
-<div class="card">
-    <img src="{{url_for ('static',filename='smart.jpg')}}">
-<div class="card-text">
-    <pre id="p8">
-Futuristic Living Spaces: 
-
-Residences feature cutting-edge tech, 
-smart home integration, and advanced 
-automation for an ahead-of-its-time 
-environment.
-</pre>
-</div>
-</div>
-</div>
-</section>
-
-<section id="section8">
-    <div class="card-container">
-    <div class="card">
-        <img src="{{url_for ('static',filename='interior.jpg')}}">
-    <div class="card-text">
-    <pre id="p8">
-Personalized Integration:
-
-Fabula empowers residents to 
-customize dwellings with dynamic 
-walls and modular interiors, 
-ensuring unique living experiences.
-    </pre>
-    </div>
-    </div>
-    
-    <div class="card">
-        <img src="{{url_for ('static',filename='features.jpg')}}">
-    <div class="card-text">
-    <pre id="p8">
-Intelligent Living: 
-
-Fabula revolutionizes living with 
-responsive climate control, ambient 
-lighting, and intuitive configurations 
-for unparalleled comfort.
-        </pre>
-    </div>
-    </div>
-    </div>
-</section>
-
-<section id="section9">
-    <h5 id="h9">Investment Opportunities in Fabula :</h5>
-    <pre id="p9">
+<section id="section5">
+    <h5 id="h5">Investment </h5>
+    <h5 id="h5">Oppurtunities</h5>
+    <h5 id="h6">In Fabula:</h5>
+    <p id="p5">
 Cash-Free Real Estate:
-Experience a life beyond boundaries in Fabula's cash-free real estate—luxurious living, 
-all without payments.
+Experience a life beyond boundaries in Fabula's cash-free real estate—luxurious living, all without payments.
 
 Smart City Living:
-Embrace a cash-free lifestyle in Fabula's smart city, with intelligent systems and 
-amenities provided at no cost for an unparalleled living experience.
+Embrace a cash-free lifestyle in Fabula's smart city, with intelligent systems and amenities provided at no cost 
+for an unparalleled living experience.
 
 Tech-Driven Paradise:
-Thrive in Fabula's cash-free tech haven, enjoying AI, VR, and sustainable tech 
-luxuries—all included in the cost-free living package.
+Thrive in Fabula's cash-free tech haven, enjoying AI, VR, and sustainable tech luxuries—all included in the 
+cost-free living package.
 
 Sustainable Serenity:
-Live sustainably in Fabula with eco-tech and green spaces—all accessible to residents 
-without any payments.
+Live sustainably in Fabula with eco-tech and green spaces—all accessible to residents without any payments.
 
 Entertainment Extravaganza:
 Indulge in <a href="pass.html">cash-free</a> entertainment and cultural spaces in Fabula, offering luxury 
@@ -294,11 +145,11 @@ experiences without the need for financial transactions.
 
 Community Bliss:
 Be part of Fabula's cash-free community, enjoying shared spaces and cultural exchanges.
-    </pre>
+    </p>
 </section>
 
-<section id="section10">
-    <h6 id="h10">Frequently Asked Questions (FAQ) :</h6>
+<section id="section6">
+    <h6 id="h61">Frequently Asked Questions</h6>
     <section class="faq-container">
 
 
@@ -340,6 +191,7 @@ Be part of Fabula's cash-free community, enjoying shared spaces and cultural exc
 
     <div class="question" onclick="toggleAnswer('p130')">Q: Can I visit Fabula before deciding to become a resident?</div>
     <div class="answer" id="p130">A: Absolutely! Fabula welcomes prospective residents to visit and explore the city before making a commitment. Schedule a visit through our online platform, and our representatives will guide you through a personalized tour, showcasing the unparalleled lifestyle that awaits you.</div>
+
 </section>
 </section>
 
@@ -352,7 +204,7 @@ Be part of Fabula's cash-free community, enjoying shared spaces and cultural exc
 
 <section id="finalsection">
     <header>
-        <h1>Contact Us</h1>
+        <h1 id="hf">Contact Us</h1>
     </header>  
     <div class="container2">
         <div class="company-details">
@@ -389,7 +241,13 @@ Dresden
     <div class="popup" id="popup">
         <span class="close-btn" onclick="closePopup()">&times;</span>
         <h2 id="hp">Thank you for reaching out!</h2> 
-        <p>We'll get back to you soon</p>
+        <p id="pi">We'll get back to you soon
+        and w3lc0m3.exe t0 "33rfHSAC" FABULA! 
+        01010010 01010101 01001110 00101110 
+        01010011 01000001 01010110 01000101 
+        01011001 01001111 01010101 01010010 
+        01010011 01000101 01001100 01000110
+        </p>
     </div>
     <footer>
         © 1973 Fabula. All rights reserved.
