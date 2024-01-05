@@ -1,9 +1,11 @@
 body {
     margin: 0;
     font-family: "Broken Soul";
+    color: rgb(173, 13, 13);
 }
 
 #section1 {
+    background-image: url('auth.jpg');
     height:100vh;
     display:flex;
     flex-direction: column;

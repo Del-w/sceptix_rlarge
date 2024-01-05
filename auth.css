@@ -3,6 +3,7 @@ body {
 }
 
 #section1 {
+    background-image: url('unauth.jpg');
     height:100vh;
     display:flex;
     justify-content: center;
