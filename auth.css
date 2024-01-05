@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+#section1 {
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
