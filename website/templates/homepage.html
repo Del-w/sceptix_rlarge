@@ -4,13 +4,14 @@
     <title>g00dby3.exe</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="full.css">
+    <link rel="stylesheet" href="{{url_for ('static',filename='full.css')}}">
     <link href="https://db.onlinewebfonts.com/c/b0fa0ee4a272f31f44f1e1b876cad6c3?family=Bastro" rel="stylesheet">  
     <link href="https://db.onlinewebfonts.com/c/bc229d0cbaf57b9531e961c076963c0a?family=a3+Italic" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/f91a412001b172191b72f9c3aa8a4dd5?family=GT+Alpina+Fine+Regular" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/61ccd65742ec5c151136c77f6ef097c4?family=HelveticaNeueLTPro-Ex" rel="stylesheet">
 </head>
 <body>
+
     <!--starting section-->
     <section id="section1">
         <div id="box">
@@ -41,7 +42,7 @@ Welcome to Fabula
         <h3 id="h0">SAY HELLO</h3>
         <h4 id="h001">TO 'FABULA'</h4>
         <video id="video" autoplay muted loop>
-            <source src="video1.mp4" type="video/mp4">
+            <source src="{{url_for ('static',filename='video1.mp4')}}" type="video/mp4">
         </video>
         <pre id="p2">
 Our Mission:
@@ -62,7 +63,7 @@ of their unique narratives.
         <div id="scrollx" class="scrollx">
             <button id="arrow-left" onclick="scrollCards('left')">❮</button>
             <div class="cardx">
-                <img src="future.jpg" alt="Image 1">
+                <img src="{{url_for ('static',filename='future.jpg')}}" alt="Image 1">
                 <div class="card-text">
                     <p id="p3">1. Architectural Marvels:
                         Fabula's skyline redefines design essence with gravity-defying 
@@ -71,7 +72,7 @@ of their unique narratives.
                 </div>
             </div>
             <div class="cardx">
-                <img src="city.jpg" alt="Image 2">
+                <img src="{{url_for ('static',filename='city.jpg')}}" alt="Image 2">
                 <div class="card-text">
                     <p id="p3">2. Green Oasis:
                         Nestled in Fabula's heart, lush parks and serene gardens offer 
@@ -80,7 +81,7 @@ of their unique narratives.
                 </div>
             </div>
             <div class="cardx">
-                <img src="school.jpg" alt="Image 3">
+                <img src="{{url_for ('static',filename='school.jpg')}}" alt="Image 3">
                 <div class="card-text">
                     <p id="p3">3. Holistic Community:
                         Fabula transcends as a holistic community with world-class amenities, 
@@ -89,7 +90,7 @@ of their unique narratives.
                 </div>
             </div>
             <div class="cardx">
-                <img src="features.jpg" alt="Image 4">
+                <img src="{{url_for ('static',filename='feature.jpg')}}" alt="Image 4">
                 <div class="card-text">
                     <p id="p3">4. Smart City Living:
                         Fabula leads in technological innovation with smart city infrastructure, 

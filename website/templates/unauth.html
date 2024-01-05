@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="unauth.css">
+    <link rel="stylesheet" href="{{url_for ('static',filename='unauth.css')}}">
     <link href="https://db.onlinewebfonts.com/c/5897e927a3624edf5eaeed678b2b7e15?family=Broken+Soul" rel="stylesheet">
     <title>R3strict3d.exe</title>
 </head>
@@ -13,7 +13,7 @@
     <section id="section1">
         <h1>you have stumbled upon something you were told not to...</h1>
         <video controls>
-            <source src="unauth.mp4" type="video/mp4">
+            <source src="{{url_for ('static',filename='unauth.mp4')}}" type="video/mp4">
         </video>
         <p>your actions have consequences</p>
         <p>your actions have consequences</p>
