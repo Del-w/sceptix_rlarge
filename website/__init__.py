@@ -1,12 +1,12 @@
-from flask import Flask , render_template
+from flask import Flask 
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'hasbullah'
 
-    from .views import views
+    app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
 
+    from website.routes import routes
 
-    app.register_blueprint(views,url_prefix='/')
-    
+    app.register_blueprint(routes)
+  
     return app
