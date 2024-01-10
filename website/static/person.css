@@ -8,7 +8,7 @@ body{
     height: 100vh;
     color: white;
     text-align: center;
-    overflow: hidden;
+    overflow:visible;
     background-color: rgb(57, 96, 98);
 }
 
