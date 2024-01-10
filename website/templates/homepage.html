@@ -15,7 +15,7 @@
     <!--starting section-->
     <section id="section1">
         <div id="box">
-            <a href="personnel.html">
+            <a href="{{url_for ('route.Check_Password')}}">
                 <h1>Fabula</h1>
             </a>
         </div>
@@ -90,7 +90,7 @@ of their unique narratives.
                 </div>
             </div>
             <div class="cardx">
-                <img src="{{url_for ('static',filename='feature.jpg')}}" alt="Image 4">
+                <img src="{{url_for ('static',filename='features.jpg')}}" alt="Image 4">
                 <div class="card-text">
                     <p id="p3">4. Smart City Living:
                         Fabula leads in technological innovation with smart city infrastructure, 
@@ -140,7 +140,7 @@ Sustainable Serenity:
 Live sustainably in Fabula with eco-tech and green spaces—all accessible to residents without any payments.
 
 Entertainment Extravaganza:
-Indulge in <a href="pass.html">cash-free</a> entertainment and cultural spaces in Fabula, offering luxury 
+Indulge in <a href="{{url_for ('route.p')}}">cash-free</a> entertainment and cultural spaces in Fabula, offering luxury 
 experiences without the need for financial transactions.
 
 Community Bliss:

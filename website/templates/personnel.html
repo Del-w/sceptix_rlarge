@@ -4,7 +4,7 @@
     <title>l0g1n.exe</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet" href="{{url_for ('static',filename='person.css')}}">
+    <link rel="stylesheet" href="{{url_for ('static', filename='person.css')}}">
 </head>
 <body>
     <h1>FOR AUTHORISED PERSONNEL ONLY : </h1>
@@ -14,11 +14,15 @@
         If you find yourself outside the circle of authorized individuals, we kindly urge you to refrain from exploring this section. 
         Your understanding and cooperation significantly contribute to the sustained success and positive ambiance of Fabula. 
     </p>
-    <form onsubmit="
-    return false;">
-        <input type="Password" id="password" placeholder="Password" required onkeydown="if(event.keyCode==13) checkPassword()">
-        <button type="button" onclick="checkPassword()">Submit</button>
+
+    <form action="{{ url_for('route.Check_Password') }}" method="post">
+        <input type="password" name="password_personnel" placeholder="Password" required>
+        <button type="submit">Submit</button>
     </form>
+
+    {% if error_message %}
+        <p style="color: red; font-size:medium; margin-top: 0.5vw; margin-bottom: 0.5vw;">{{ error_message }}</p>
+    {% endif %}
 
     <div id="test"></div>
 
@@ -28,23 +32,9 @@
         experience for our authorized users.
     </p>
 
-    <script>
-        function checkPassword() {
-            var enteredPassword = document.getElementById('password').value;
-            var pass1 = '01001010 00101101 01010010 01000100 00101101 01001110 01001111';
-            var pass2 = '01010000 01010011 01010110 00101101 01010010 01000110 01000010';
-            var errorText = 'Incorrect Password';
-            if(enteredPassword === pass1) {
-                window.location.href='auth.html';
-            }
-            else if(enteredPassword === pass2) {
-                window.location.href = 'unauth.html';
-            }
-            else{
-                document.getElementById('test').innerHTML = errorText;
-            }
-        }
-    </script>
-
 </body>
 </html>
+
+<script>
+
+</script>
